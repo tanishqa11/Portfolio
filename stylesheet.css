@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: "Poppins", "sans-serif";
+    scroll-behavior: smooth;
+
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(14, 14, 61);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    animation: slideRight 3s ease forwards;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+
+    text-decoration: none;
+    color: white;
+    scroll-behavior: smooth; /* Enable smooth scrolling for anchor links */
+
+}
+
+nav ul li a:hover {
+
+    color: rgb(5, 204, 208);
+    font-size: 1.3rem;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Adjust this as needed, e.g., to 'flex-start' for left alignment */
+    margin-top: 20px; 
+}
+
+.social-icon a {
+    margin-right: 10px; /* Spacing between icons */
+    text-decoration: none; /* Removes underline from links */
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.social-icon a:last-child {
+    margin-right: 0;
+     /* Removes spacing after the last icon */
+}
+
+.fab.fa-linkedin {
+    color: white; 
+    /* LinkedIn blue color */
+}
+
+.fab.fa-github {
+    color: white; /* GitHub icon color, usually black or dark grey */
+}
+.fab.fa-linkedin:hover {
+    color: #0A66C2; 
+    box-shadow: 0 0 5px #0A66C2,0 0 25px#0A66C2,0 0 50px#0A66C2,0 0 100px #0A66C2,0 0 200px #0A66C2;
+    /* LinkedIn's brand color for hover effect */
+}
+
+.fab.fa-github:hover {
+    color: #333;
+    box-shadow: 0 0 5px #333,0 0 25px #333,0 0 50px#333,0 0 100px #333 ,0 0 200px #333;
+    /* Dark grey color for GitHub on hover */
+}
+
+
+.left {
+    font-size: 1.0rem;
+}
+
+.firstSection {
+    
+    display: flex;
+    justify-content: space-around;
+    margin: 23px 0;
+}
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    z-index: 1; 
+    opacity: 0.4;/* Ensure it doesn't overlap content visually */
+}
+
+.text{
+    color: white;
+    
+}
+.leftSection {
+    font-size: 2.0rem;
+    margin-top: 170px;
+    margin-bottom: 50px;
+    z-index: 2; 
+    opacity: 0;
+    animation: slideRight 3s ease forwards;
+
+}
+.leftSection .buttons {
+    padding:12px;
+    z-index: 2; 
+}
+
+.leftSection .btn-primary-rounded {
+    padding: 10px;
+    background: #8f8fbb;
+    color: white;
+    border: 3px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 2; /
+
+}
+.leftSection .btn-primary-rounded:hover{
+    box-shadow: 0 0 5px white,0 0 25px white,0 0 50px white,0 0 100px white,0 0 200px white;
+}
+
+
+.rightSection {
+padding-top: 40px;
+z-index: 2; 
+opacity: 0;
+animation: slideleft 3s ease forwards;
+}
+
+
+.about-class{
+    height: 15cm;
+    padding:0%;
+    
+}
+/* .about-class:target{
+    opacity: 1;
+} */
+.about-text{
+    color: #8f8fbb;
+}
+.Mycontent {
+    display: flex; 
+    margin-top: 60px; /* Add margin to the top of the section */
+    align-items: center;
+}
+.MyImage .img-thumbnail{
+    max-width: 300px; 
+    height: auto;
+    margin-left: 20px;
+    margin-right: 50px;
+    box-shadow: 0 0 5px  #8f8fbb ,0 0 25px ,0 0 50px #8f8fbb ,0 0 50px #8f8fbb ,0 0 50px  #8f8fbb;
+    
+
+    
+
+}
+.pl-md-4.col-md-9 {
+    flex: 1;
+}
+html {
+scroll-padding-top: 80px; /* Height of the navbar */
+}
+
+footer {
+    background-color: rgb(49, 49, 164);
+    height: 300px;
+}
+
+.footer {
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+
+}
+
+.footer ul {
+    list-style: none;
+}
+
+footer .footer-rights {
+    text-align: center;
+    color: grey;
+    padding-top: 120px;
+
+}
+
+
+.purple {
+    color: rgb(198, 198, 243);
+}
+
+#element {
+    color: rgb(198, 198, 243);
+font-size: 40px;
+
+
+}
+
+main hr {
+    margin: 10px 20px;
+}
+
+.grey {
+    color: gray;
+    padding-left: 100px;
+}
+
+.secondSection {
+    
+    height: 600px;
+    margin-top:1cm ;       
+}
+
+.secondSection h1 {
+    padding-left: 100px;
+    font-size: 170%;
+    height: 20vh;
+
+}
+
+.secondSection .box {
+    background: white;
+    width: 88vw;
+    height: 2px;
+    margin: 200px 100px;
+    margin-top: 10px;
+    display: flex;
+
+
+}
+
+.secondSection .vertical {
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0px 150px;
+
+}
+
+.image-top {
+    width: 30px;
+    top: -32px;
+    left: -10px;
+    position: relative;
+
+}
+
+.vertical-title {
+    position: relative;
+    top: 55px;
+    width: 150px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.vertical-text {
+    position: relative;
+    top: 60px;
+    width: 150px;
+    color: gray;
+    font-size: 13px;
+
+
+}
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+}
+@keyframes slideleft {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+}
+.sec-1{
+    padding: 10%;
+    display: flex;
+    font-size: larger;
+    background: wheat;
+    align-items: right;
+}
+.sec-1 .animate{
+    transform: translateX(-100%);
+}
+.sec-1.show-animate .animate{
+    transform: translateX(0%);
+}
+Section .animate{
+    transition: transform 1s;
+}
+
+.about-class .animate{
+    opacity: 0.1;
+    scroll-behavior: smooth;
+     transform: translateY(60px);
+
+ }
+.about-class.show-animate .animate{
+    opacity: 1;
+     transform: translateY(0px);
+ }
+
+.sec-5 .image-container img{
+    max-width: 350px;
+    margin:0 30px;
+    padding-top: 5cm ;
+    padding-bottom: 5cm;
+    margin-left: 1cm;
+    transform: translateX(-100%);
+    transition-delay: calc(.2s*var(--i));
+    filter: blur(10px);
+
+}
+.sec-5.show-animate .image-container img{
+    transform: translateX(0);
+    filter: blur(0);
+}
+
+.sec-5 .image-container img:hover {
+    transform: scale(1.2); /* Scale the image to 120% on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.text-certi {
+    font-size: 50px; /* Adjust the font size as needed */
+    color:white; /* Set the text color */
+    text-align: center; /* Center align the text */
+    margin-bottom: 5px; /* Add some bottom margin for spacing */
+    font-weight: bold; /* Optionally, make the text bold */
+
+}
+.sec-5 .animate{
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+.sec-5.show-animate .animate{
+    transform: translateX(0%);
+    filter: blur(0px);}
