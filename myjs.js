@@ -117,5 +117,23 @@ window.onscroll=() =>{
         }
     })
 }
+// let sections = document.querySelectorAll('section');
+// let certificateSection = document.getElementById('certificate');
+// let animationTriggered = false; // Flag to track if animation has been triggered
+
+// window.onscroll = () => {
+//     sections.forEach(sec => {
+//         let top = window.scrollY;
+//         let offset = sec.offsetTop - 150;
+//         let height = sec.offsetHeight;
+//         if (top >= offset && top < offset + height && !animationTriggered && sec === certificateSection) {
+//             sec.classList.add('show-animate');
+//             animationTriggered = true; // Set flag to true once animation is triggered for certificate section
+//         } else {
+//             sec.classList.remove('show-animate');
+//         }
+//     });
+// };
+
 
 
